@@ -2,8 +2,8 @@
 const cashfree = require('cashfree-pg');
 
 // ⚠️ IMPORTANT: Yeh keys Netlify Environment Variables se aayengi!
-const CF_APP_ID = TEST10727480311a8687b61950f38f4608472701; 
-const CF_SECRET_KEY = cfsk_ma_test_a56235cab7fddc9b11340a202d8b2bc8_a9f7b00a;
+const CF_APP_ID = ; 
+const CF_SECRET_KEY = ;
 // Agar aap PROD keys use kar rahe hain toh 'PRODUCTION' rakho, varna 'SANDBOX'
 const CF_ENV = cashfree.Cashfree.Environment.SANDBOX;   
 
@@ -64,5 +64,6 @@ exports.handler = async (event) => {
     }
 
 };
+
 
 
