@@ -5,7 +5,7 @@ const cashfree = require('cashfree-pg');
 const CF_APP_ID = process.env.CF_APP_ID; 
 const CF_SECRET_KEY = process.env.CF_SECRET_KEY;
 // Agar aap PROD keys use kar rahe hain toh 'PRODUCTION' rakho, varna 'SANDBOX'
-const CF_ENV = cashfree.Cashfree.Environment.PRODUCTION; 
+const CF_ENV = cashfree.Cashfree.Environment.SANDBOX; 
 
 // Cashfree SDK ko initialize karna
 cashfree.Cashfree.init(CF_ENV, CF_APP_ID, CF_SECRET_KEY);
@@ -62,4 +62,5 @@ exports.handler = async (event) => {
             body: JSON.stringify({ message: 'Internal Server Error', error: error.message })
         };
     }
+
 };
