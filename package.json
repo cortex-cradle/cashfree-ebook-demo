@@ -1,0 +1,7 @@
+{
+  "name": "cashfree-demo-backend",
+  "version": "1.0.0",
+  "dependencies": {
+    "cashfree-pg": "^3.1.20"
+  }
+}
